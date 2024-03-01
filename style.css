@@ -37,4 +37,8 @@ body{
 .botao{
 font-family: 'lora',sans-serif;
 background-color: var(--botao-inativo);
+color: var(--numeros);
+display: flex;
+justify-content: center;
+padding: 1em;
 }
