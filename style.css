@@ -7,9 +7,8 @@
    --letras-tempo:#DC9BF5;
    --numeros:#FFFFFF;
    --letra-rosa-claro:#E4B7F5;
-   
-
-
-
+}
+body{
+   background-color: var(--cor-de-fundo)
 
 }
