@@ -11,5 +11,5 @@
 
 body{
    background-color: var(--cor-de-fundo);
-  color: var(--numeros);
+  color: var(--cor-texto);
 }
