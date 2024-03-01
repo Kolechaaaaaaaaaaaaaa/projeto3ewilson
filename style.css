@@ -12,4 +12,12 @@
 body{
    background-color: var(--cor-de-fundo);
   color: var(--cor-texto);
+  font-family:'lora', sans-serif;
+
+}
+.conteudo-principal{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
