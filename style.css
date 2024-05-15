@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 :root{
    --cor-de-fundo:rgba(189, 66, 237, 0.3);
    --cor-texto:#DC9BF5;;
@@ -9,6 +10,9 @@
 }
 body{
    background-color: var(--cor-de-fundo);
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .botao{
