@@ -1,71 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 :root{
    --cor-de-fundo:rgba(189, 66, 237, 0.3);
-   --cor-texto:#DC9BF5;
+   --cor-texto:#DC9BF5;;
+   --botao-ativo:rgba(133, 66, 237, 0.5);
    --botao-inativo:rgba(133, 66, 237, 0.5);
-   --letras-maiuscula:#E4B7F5;
-   --letras-tempo:#DC9BF5;
-   --numeros:#FFFFFF;
-   --letra-rosa-claro:#E4B7F5;
-   --span:#8542ED;
-}
+   --texto-simples:#FFFFFF;
 
+
+}
 body{
-  background-color: var(--cor-de-fundo);
-  color: var(--cor-texto);
-  font-family:'lora', sans-serif;
-
-}
-.conteudo-principal{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   max-width: 1200%;
-   width: 100%;
-   margin: 0 auto;
-}
-.tituloinicial{
-   text-align: left;
-   width: 100%;
-   font-size: 32px;
+   background-color: var(--cor-de-fundo);
 }
 
-.tituloinicial span{
- color: var(--span);
-}
 .botao{
-font-family: 'lora',sans-serif;
-background-color: var(--botao-inativo);
-color: var(--numeros);
-display: flex;
-justify-content: center;
-padding: 1em;
-font-size: 18px;
-align-items: center;
-width: 100%;
-border-bottom: 4px solid var(--letra-rosa-claro);
-border-left: 2px solid var(--letra-rosa-claro);
-border-right: 2px solid var(--letra-rosa-claro);
-border-top: none;
+   color: var(--texto-simples);
+   background-color: var(--botao-inativo);
+   border-color: var(--botao-ativo);
+   font-family: "Shadows Into Light", cursive;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 18px;
+   width: 100%;
+   justify-content: center;
+   align-self: auto;
+   padding: 1em;
+   border-bottom: 4px solid var(--botao-ativo);
+   border-left: 2px solid var(--botao-ativo);
+   border-right: 2px solid var(--botao-ativo);
+   border-top: none;
 }
+
 .botao:first-child{
-   border-radius: 40px 40px 0 0;
+ border-radius: 40px 40px 0px 0px;
 }
+
 .botoes{
-   display: block;
+display: block;
 }
+
 .ativo{
-   
+ background-color: var(--botao-ativo);
+ border-bottom: 4px solid var(--cor-texto);
 }
-@media screen and (min-width: 768px) {
-   .botoes{
-      display: flex;
-   }
-   .botao:first-child{
-      border-radius: 40px 0 0 0;
-   }
-   .botao:last-child{
-      border-radius: 0 40px 0 0;
-   }
+
+.conteudo-principal{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ max-width: 1200px;
+ width: 100%;
+ margin: 0 auto;
+}
+
+.abas-textos{
+background-color: var(--cor-de-fundo);
+padding: 40px;
+border-radius: 40px 40px 40px 40px;
+font-family: "Shadows Into Light", cursive;
+}
+
+.aba-conteudo.ativo{
+display: block;
+}
+
+.aba-conteudo{
+display: none;
+}
+
+.aba-conteudo-titulo-principal{
+font-size: 28px;
+text-align: center;
+}
+
+.aba-conteudo-titulo-secundario{
+text-align: center;
+color: var(--cor-texto);
+text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px){
+ .botoes{
+   display: flex;
+ }
+
+ .botao:first-child{
+   border-radius: 40px 0px 0px 0px;
+ }
+
+ .botao:last-child{
+   border-radius: 0px 40px 0px 0px;
+ }
+ 
+}
+
+.titulo-principal{
+
+   font-family: "Shadows Into Light", cursive;
+ font-weight: 400;
+ font-style: normal;
+   background-image: linear-gradient(
+   -225deg,
+   #ff595e 0%,
+   #ffca3a 29%,
+   #8ac926 67%,
+   #1982c4 88%,
+   #6a4c93 100%
+
+ );
+ background-size: auto auto;
+ background-clip: border-box;
+ background-size: 200% auto;
+ color: #fff;
+ background-clip: text;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ animation: textclip 1s linear infinite;
+ display: inline-block;
+     font-size: 50px;
+}
+
+@keyframes textclip {
+ to {
+   background-position: 200% center;
+ }
 }
